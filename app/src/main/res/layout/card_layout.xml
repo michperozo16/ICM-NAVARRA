@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_margin="12dp"
+    app:cardBackgroundColor="#227C9D"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="6dp"
+    app:contentPadding="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="16dp" />
+
+      <TextView
+          android:id="@+id/item_title"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Icm Navarra"
+          android:textColor="@color/white"
+          android:textStyle="bold"
+          android:layout_toEndOf="@id/item_image"
+          android:layout_alignParentTop="true"
+          android:textSize="30sp"/>
+
+        <TextView
+            android:id="@+id/item_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Iglesia local con una vision global"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/item_image"
+            android:layout_below="@id/item_title"
+            />
+
+        <Button
+            android:id="@+id/button"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="39dp"
+            android:layout_below="@id/item_title"
+            android:layout_alignEnd="@id/item_title"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#770E0E07"
+            android:onClick="irIcmNavarra"
+            android:text="boton"
+            android:textColor="@color/white"
+            app:cornerRadius="20dp"
+            app:strokeColor="@color/white" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
